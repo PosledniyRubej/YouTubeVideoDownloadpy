@@ -124,9 +124,9 @@ class App():
             }
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([self.video_input.text()])
-            self.return_video_text.setText("The download was successful! Check the folder!")
+            self.return_video_text.setText("Загрузка прошла успешно! Проверить папку")
         except:
-            self.return_video_text.setText("The download was successful! Check the folder!")
+            self.return_video_text.setText("Загрузка прошла успешно! Проверьте папку!")
             
     def clear_video(self):
         self.return_video_text.clear()
